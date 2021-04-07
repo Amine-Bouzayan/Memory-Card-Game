@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/MCG.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    </style> 
+    <title>Memory Card Game</title>
+  </head>
+
+  <body>
+
+    <div class="control-buttons">
+      <span>let's get started</span>
+    </div>
+    <div id='pop-up' class="pop-up">
+      <p>what is your name ?</p>
+      <input type="text" name='theName' placeholder="enter your name right here">
+      <button>start game</button>
+    </div>
+
+    <div class="info-container">
+      <div class="name">
+        welcome: <span id="name"></span>
+      </div>
+      <div class="tries">
+        wrong try: <span>0</span>
+      </div>
+    </div>
+    <div class="game-blocks">
+      <div class="game-block" data-info="bayern">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/bayern.png" alt="bayern">
+        </div>
+      </div>
+      <div class="game-block" data-info="bayern">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/bayern.png" alt="bayern">
+        </div>
+      </div>
+      <div class="game-block" data-info="acm">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/acm.png" alt="acm">
+        </div>
+      </div>
+      <div class="game-block" data-info="acm">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/acm.png" alt="acm">
+        </div>
+      </div>
+      <div class="game-block" data-info="real">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/real.png" alt="real">
+        </div>
+      </div>
+      <div class="game-block" data-info="real">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/real.png" alt="real">
+        </div>
+      </div>
+      <div class="game-block" data-info="city">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/city.png" alt="city">
+        </div>
+      </div>
+      <div class="game-block" data-info="city">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/city.png" alt="city">
+        </div>
+      </div>
+      <div class="game-block" data-info="liverpool">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/liverpool.png" alt="liverpool">
+        </div>
+      </div>
+      <div class="game-block" data-info="liverpool">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/liverpool.png" alt="liverpool">
+        </div>
+      </div>
+      <div class="game-block" data-info="inter">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/inter.png" alt="inter">
+        </div>
+      </div>
+      <div class="game-block" data-info="inter">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/inter.png" alt="inter">
+        </div>
+      </div>
+      <div class="game-block" data-info="juv">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/juv.png" alt="juv">
+        </div>
+      </div>
+      <div class="game-block" data-info="juv">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/juv.png" alt="juv">
+        </div>
+      </div>
+      <div class="game-block" data-info="chelsea">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/chelsea.png" alt="chelsea">
+        </div>
+      </div>
+      <div class="game-block" data-info="chelsea">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/chelsea.png" alt="chelsea">
+        </div>
+      </div>
+      <div class="game-block" data-info="barca">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/barca.png" alt="barca">
+        </div>
+      </div>
+      <div class="game-block" data-info="barca">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/barca.png" alt="barca">
+        </div>
+      </div>
+      <div class="game-block" data-info="man-utd">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/man-utd.png" alt="man-utd">
+        </div>
+      </div>
+      <div class="game-block" data-info="man-utd">
+        <div class="face front">
+          <img src="https://img.icons8.com/emoji/100/000000/top-hat-emoji.png"/>
+        </div>
+        <div class="face back">
+          <img src="../img/man-utd.png" alt="man-utd">
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <img src="../img/memoryCardGame.png" alt="MCG">
+      <p>
+        &copy; <span>Copyright 2021 Morocco;</span> &reg; <span>All Rights Reserved;</span> |
+        <i class="fa fa-envelope"></i> : <a href="mailto:aminebouzayan10@gmail.com">aminebouzayan10@gmail.com</a> |
+      </p>
+        
+        <a href="https://github.com/Amine-Bouzayan" target="_blank">
+          <i class="fa fa-github"> github</i>
+        </a> | 
+        <a href="https://codepen.io/amine-bouzayan" target="_blank">
+          <i class="fa fa-codepen"> codepen</i>
+        </a> | 
+        <a href="https://twitter.com/aminebouzayan" target="_blank">
+          <i class="fa fa-twitter"> twitter</i>
+        </a>
+    </footer>
+
+    <!-- losing the game box -->
+
+    <section class="game-over">
+      <div class="overlay">
+        <div class="box"></div>
+      </div>
+    </section>
+
+    <!-- winning the game box -->
+
+    <section class="you-win">
+      <div class="overlay">
+        <div class="box"></div>
+      </div>
+    </section>
+    
+    <!-- SOUNDS FOR THE GAME -->
+
+    <audio src="../sounds/failed.mp3" preload="auto" id="failed"></audio>
+    <audio src="../sounds/sucsess.mp3" preload="auto" id="sucsess"></audio>
+    <audio src="../sounds/lose.wav" preload="auto" id="lose"></audio>
+    <audio src="../sounds/win.wav" preload="auto" id="win"></audio>
+    
+    <!-- SOUNDS FOR THE GAME -->
+    
+    <script src="test.js"></script>
+  </body>
+</html>
