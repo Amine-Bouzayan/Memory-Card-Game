@@ -269,9 +269,10 @@
     footer {
       background-color: #333;
       color: whitesmoke;
-      width: 100%;
+      min-width: 100%;
       padding: 22px 13rem;
       position: relative;
+      margin: 0;
     }
     
     footer img {
@@ -334,4 +335,16 @@
     .users span {
       opacity: 0;
       margin: 3px;
+    }
+
+    @media (max-width: 700px) {
+      footer {
+        width: 800px;
+      }
+
+      footer img {
+        width: 111px;
+        height: 111px;
+        left: 100px;
+      }
     }
