@@ -144,11 +144,12 @@ function checkBlocks(firstBlock, secondBlock) {
 }
 
 let users = document.getElementById('users');
+users.style.display = "none";
 
 !function () {
   if (localStorage.length) {
     for (let [key, value] of Object.entries(localStorage)) {
-      users.innerHTML += `<span style="display:none">${key} *** ${value}</span>`;
+      users.innerHTML += `<span>${key} *** ${value}</span>`;
     }
   } else {
     return null
