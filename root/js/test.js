@@ -1,4 +1,4 @@
-//!          -------------------------------- *** Card Game  *** ---------------------------------------
+//!          -------------------------------- *** Memory Card Game  *** ---------------------------------------
 
 let popUp = document.querySelector('#pop-up');
 let startGame = document.querySelector('#pop-up button');
@@ -148,7 +148,7 @@ let users = document.getElementById('users');
 !function () {
   if (localStorage.length) {
     for (let [key, value] of Object.entries(localStorage)) {
-      users.innerHTML += `<span>${key} *** ${value}</span>`;
+      users.innerHTML += `<span style="display:none">${key} *** ${value}</span>`;
     }
   } else {
     return null
